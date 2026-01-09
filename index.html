@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusHub Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<header>
+  <img src="images/logo.png" alt="FocusHub Pro Logo" class="logo">
+
+  <h1>FocusHub Pro</h1>
+  <p>Bleib fokussiert und produktiv – egal ob beim Lernen, Arbeiten oder Programmieren.</p>
+</header>
+
+<main>
+  <section class="download-section">
+    <h2>Jetzt herunterladen</h2>
+    <p>Die EXE-Datei ist nur für <strong>Windows</strong>. Linux- und Mac-Versionen kommen bald! Hinweis: Google kann diese Datei nicht auf Viren prüfen, sie ist aber sicher.</p>
+    <a href="https://drive.google.com/uc?export=download&id=1dX6wkd2etThURNPbdgke7cl8CVrSHjoX" class="button" download>
+      <span>FocusHub Pro herunterladen</span>
+    </a>
+  </section>
+
+  <section class="features">
+    <h2>Funktionen & Möglichkeiten</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <h3>Fokus-Timer</h3>
+        <p>Arbeitsintervalle und Pausen einfach einstellen, um maximale Produktivität zu erreichen.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Ablenkungsblocker</h3>
+        <p>Websites und Apps blockieren, damit du dich voll auf deine Arbeit konzentrieren kannst.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Statistiken</h3>
+        <p>Behalte den Überblick über deine Arbeitszeit, Pausen und Fortschritte.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Portable App</h3>
+        <p>Keine Installation nötig – einfach EXE starten und direkt loslegen.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Anpassbar</h3>
+        <p>Farben, Timer und Einstellungen personalisieren nach deinem Geschmack.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Leistungsoptimiert</h3>
+        <p>Läuft ressourcenschonend im Hintergrund, ohne deinen PC zu belasten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots">
+    <h2>Screenshots</h2>
+    <img src="images/screenshot1.png" alt="FocusHub Pro Screenshot" class="screenshot" id="screenshot">
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 FocusHub Pro. Kostenlos nutzbar.</p>
+</footer>
+
+<!-- Modal für Screenshot -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+<script>
+// Modal für Screenshot
+const modal = document.getElementById("modal");
+const img = document.getElementById("screenshot");
+const modalImg = document.getElementById("modal-img");
+const closeBtn = document.getElementsByClassName("close")[0];
+
+img.onclick = function(){
+  modal.style.display = "flex";
+  modalImg.src = this.src;
+}
+
+closeBtn.onclick = function() { 
+  modal.style.display = "none";
+}
+
+// Klick außerhalb des Bildes schließt das Modal
+modal.onclick = function(e) {
+  if(e.target === modal){
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
